@@ -24,7 +24,7 @@
     - XQuartz (解决打包速度慢)
     - homebrew
 
-## 仅用electron创建应用
+## 创建electron应用
 开发环境基础准备安装nodejs和npm
 
 ### 1. 官方简单事例
@@ -32,12 +32,27 @@
 > electron是自带require的
 
 #### 1.1 下载运行demo
+在终端运行
 ````
 git clone https://github.com/electron/electron-quick-start  
 cd electron-quick-start  
+npm install // 安装依赖包
 npm run start // 运行项目
 ````
 #### 1.2 package.json
+````json
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "~1.6.2"
+  }
+}
+````
 #### 1.3 main.js
 
 ````javascript
@@ -104,6 +119,23 @@ app.on('activate', function () {
 
 ### 2. 整理目录结构优化
 
-## 结合React
+## 创建React项目
+
+[Create React App 示例](https://github.com/facebookincubator/create-react-app)
+
+命令行运行
+````
+npm install -g create-react-app
+create-react-app my-app
+cd my-app/
+npm start // 运行项目
+````
+#### 1.2
+
+#### explain
+支持热跟新
+window.require
+所有js只能在src目录下
+
 
 ## 打包
