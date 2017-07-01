@@ -39,6 +39,8 @@ cd electron-quick-start
 npm install // 安装依赖包
 npm run start // 运行项目
 ````
+![electron-quick-start start view](/Users/grifree/Downloads/QQ20170701-082859.gif)
+
 #### 1.2 package.json
 ````json
 {
@@ -75,10 +77,10 @@ function createWindow() {
 
   // 并且装载应用的index.html页面
   win.loadURL(url.format({
-    pathname: path.join(__dirname, './build/index.html'),
+    pathname: path.join(__dirname, 'index.html'),
     protocol: 'file:',
     slashes: true
-  }));
+  }))
 
   // 打开开发工具页面
   win.webContents.openDevTools();
@@ -128,12 +130,38 @@ app.on('activate', function () {
 npm install -g create-react-app
 create-react-app my-app
 cd my-app/
-npm start // 运行项目
+npm run start // 运行项目
 ````
-#### 1.2
+
+![create-react-app start view](/Users/grifree/Downloads/QQ20170701-080831.gif)
+
+#### 1.2 explain
+
+支持热跟新
+
+## 整合 React + Electron
+
+### 1. 修改运行
+Create React App创建的项目是一个纯前端项目，整合React项目和Electron并且保留热调试和本地包引用需要以下几个简单的操作 .
+可以直接在上一个示例 `my-app` 项目中进行一点小修改
+
+1. 在项目根目录（不是src目录）下,创建Electron的启动文件 `main.js` 文件 , 把上面示例拷过来就行 .
+2. 在 `package.json` 中添加main字段 , `"main": "main.js"`
+````
+main字段
+npm run elec
+
+````
+3. 修改main.js 中的win.loadURL，改为
+````javascript
+win.loadURL(url.format({
+   pathname: path.join(__dirname, './build/index.html'),
+   protocol: 'file:',
+   slashes: true
+}))
+````
 
 #### explain
-支持热跟新
 window.require
 所有js只能在src目录下
 
