@@ -3,7 +3,7 @@
 
 ## 目录
 
-[TOC]
+[说明文字](#jump)
 
 ## 创建electron应用
 开发环境基础准备安装nodejs和npm
@@ -37,6 +37,7 @@ npm run start // 运行项目
 }
 ````
 #### 1.3 main.js
+<span id = "jump">跳转到这里：</span>
 
 ````javascript
 const electron = require('electron');
