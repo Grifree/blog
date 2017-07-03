@@ -241,9 +241,9 @@ npm run packager
 ### 3. mac下运行 `npm run packager_win` 会遇到的问题
 - 问题
     - 打包时 , 报错缺少 wine
-    ![缺少 wine](https://raw.githubusercontent.com/Grifree/blog/master/storage/images/electron%26React_4.png)
+      ![缺少 wine](https://raw.githubusercontent.com/Grifree/blog/master/storage/images/electron%26React_4.png)
     - brew install wine , 报错提示需要安装 XQuartz
-    ![安装 XQuartz](https://raw.githubusercontent.com/Grifree/blog/master/storage/images/electron%26React_5.png)
+      ![安装 XQuartz](https://raw.githubusercontent.com/Grifree/blog/master/storage/images/electron%26React_5.png)
 - 解决步骤
     - 安装 homebrew , 在终端运行
         ````
