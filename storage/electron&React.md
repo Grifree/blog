@@ -16,7 +16,8 @@ cd electron-quick-start
 npm install // 安装依赖包
 npm run start // 运行项目
 ````
-![electron-quick-start start view](/Users/grifree/Downloads/QQ20170701-082859.gif)
+
+![electron-quick-start start view](https://raw.githubusercontent.com/Grifree/blog/master/storage/images/electron%26React_1.png)
 
 #### 1.2 package.json
 ````json
@@ -110,7 +111,7 @@ cd my-app/
 npm run start // 运行项目
 ````
 
-![create-react-app start view](/Users/grifree/Downloads/QQ20170701-080831.gif)
+![create-react-app start view](https://raw.githubusercontent.com/Grifree/blog/master/storage/images/electron%26React_2.png)
 
 #### 1.2 explain
 
@@ -158,6 +159,7 @@ npm run build // 构建应用程序
 npm run elec // 运行(已构建完成)项目
 ````
 到目前为止，已经可以启动React创建的桌面应用了。
+![electron & React Web Desktop](https://raw.githubusercontent.com/Grifree/blog/master/storage/images/electron%26React_3.png)
 
 #### notice
 - 还留有几个小问题
@@ -239,7 +241,7 @@ npm run packager
 ### 3. mac下运行 `npm run packager_win` 会遇到的问题
 - 问题
     - 打包时 , 报错缺少 wine
-    ![缺少 wine](/Users/GrifreeMac/Downloads/ED7BBB93-3E44-4BB8-BE32-92E04F9D17BD.png)
+    ![缺少 wine](https://raw.githubusercontent.com/Grifree/blog/master/storage/images/electron%26React_4.png)
 - 解决步骤
     - 安装 homebrew , 在终端运行
         ````
