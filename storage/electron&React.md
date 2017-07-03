@@ -115,7 +115,7 @@ npm run start // 运行项目
 
 #### 1.2 explain
 
-支持热跟新
+支持热更新
 
 ## 整合 React + Electron
 
